@@ -111,6 +111,11 @@ The application must make it easy to:
 
 ---
 
+## Exercise 3
+Please send a link to your portfolio, only including your personal projects, to **jacques.zhuang@trustia.ai**.
+
+---
+
 ## Stack
 
 - Django / Python
