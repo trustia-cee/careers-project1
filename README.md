@@ -1,115 +1,113 @@
-# Test technique - Trustia
+# Technical Test - Trustia
 
-## Exercice 1
+## Exercise 1
 
-Créer un programme Python qui affiche dans la console des blocs de texte encadrés comme dans l’exemple fourni. :
+Create a Python program that prints text blocks in the console, framed like in the provided example.
+<img width="1045" height="276" alt="image" src="https://github.com/user-attachments/assets/79044160-18e5-4b53-9783-ec3b2b222733" />
 
-<img width="1045" height="276" alt="image" src="https://github.com/user-attachments/assets/e6ba23bf-da3e-4de0-9481-474417561397" />
+### Constraints
 
+- The maximum width of a block is **100 characters** and must be easy to modify.
+- All text must be displayed in **lowercase**.
+- Blocks may contain **one or more lines**.
+- Borders must use `-` for horizontal lines and `|` for vertical sides.
 
-### Contraintes
+### Data Organization
 
-- La largeur maximale d’un bloc est de **100 caractères** et doit être facilement modifiable.
-- Tout le texte doit être affiché **en minuscules**.
-- Les blocs peuvent contenir **une ou plusieurs lignes**.
-- Les bordures utilisent `-` pour les lignes et `|` pour les côtés.
+- All sentences must be stored in a **dictionary**.
+- Some sentences may remain in the dictionary **without being displayed**.
+- The display order must be **easy to modify**.
 
-### Organisation des données
+### Blocks to Produce
 
-- Toutes les phrases doivent être stockées dans un **dictionnaire**.
-- Certaines phrases peuvent rester dans le dictionnaire **sans être affichées**.
-- L’ordre d’affichage doit pouvoir être **facilement modifié**.
+#### Block 1
 
-### Blocs à produire
+- Clean code makes maintenance easier
 
-#### Bloc 1
+#### Block 2
 
-- Le code propre facilite la maintenance
+- Testing often avoids many errors
+- This sentence must not be displayed
 
-#### Bloc 2
+#### Block 3
 
-- Tester souvent évite beaucoup d erreurs
-- Cette phrase ne doit pas s afficher
+- This sentence must not be displayed
+- Good code should remain simple and clear
+- Simplicity improves code quality
+- Refactoring improves understanding
 
-#### Bloc 3
+### Important Rule
 
-- Cette phrase ne doit pas s afficher
-- Un bon code doit rester simple et clair
-- La simplicité améliore la qualité du code
-- Refactoriser améliore la compréhension
+The following sentences **must not appear in the console**, even if they are present in the dictionary:
 
-### Règle importante
+- `"This sentence must not be displayed"` (block 2)
+- `"Good code should remain simple and clear"` (block 3)
 
-Les phrases suivantes **ne doivent pas apparaître dans la console**, même si elles sont dans le dictionnaire :
+### Goal
 
-- "Cette phrase ne doit pas s afficher" (bloc 2)
-- "Un bon code doit rester simple et clair" (bloc 3)
+The code must make it easy to:
 
-### Objectif
-
-Le code doit permettre facilement :
-
-- de modifier le texte
-- de changer l’ordre des blocs
-- d’ajouter ou supprimer des lignes
-- de garder certaines phrases dans le dictionnaire sans les afficher
+- modify the text
+- change the order of the blocks
+- add or remove lines
+- keep some sentences in the dictionary without displaying them
 
 ---
 
-## Exercice 2
+## Exercise 2
 
-Créer une application web Django permettant de gérer des produits et de générer des factures. :contentReference[oaicite:1]{index=1}
+Create a Django web application to manage products and generate invoices.
 
-### Contraintes
+### Constraints
 
-- Utiliser impérativement le framework **Django**
-- Les produits doivent contenir :
+- You must use the **Django** framework
+- Products must contain:
   - id
-  - nom
-  - prix
-  - date de péremption
-- L’application doit permettre :
-  - créer
-  - modifier
-  - supprimer
-  - afficher des produits
-- Les listes doivent utiliser un système de **pagination**
+  - name
+  - price
+  - expiration date
+- The application must allow:
+  - create
+  - update
+  - delete
+  - display products
+- Lists must use a **pagination** system
 
-### Organisation des données
+### Data Organization
 
-- Les produits sont stockés dans une **base de données**
-- Une facture peut contenir **plusieurs produits**
-- Chaque produit dans une facture peut avoir une **quantité**
+- Products are stored in a **database**
+- An invoice can contain **multiple products**
+- Each product in an invoice can have a **quantity**
 
-### Fonctionnalités à produire
+### Features to Deliver
 
-#### Gestion des produits
+#### Product Management
 
-- Créer un produit
-- Modifier un produit
-- Supprimer un produit
-- Afficher la liste des produits
+- Create a product
+- Edit a product
+- Delete a product
+- Display the product list
 
-#### Facturation
+#### Invoicing
 
-- Créer une facture
-- Sélectionner des produits pour la facture
-- Définir la quantité des produits
+- Create an invoice
+- Select products for the invoice
+- Set the quantity for each product
 
-#### Page de détail d’une facture
+#### Invoice Detail Page
 
-- Liste des produits de la facture
-- Nombre total de produits
-- Total à payer
+- List of products in the invoice
+- Total number of products
+- Total amount to pay
 
-### Objectif
+### Goal
 
-L’application doit permettre facilement :
+The application must make it easy to:
 
-- d’ajouter ou modifier des produits
-- de créer des factures avec plusieurs produits
-- de consulter le détail d’une facture
-- de naviguer dans les listes grâce à la pagination
+- add or modify products
+- create invoices with multiple products
+- view invoice details
+- navigate through lists with pagination
 
 ---
 
@@ -117,38 +115,38 @@ L’application doit permettre facilement :
 
 - Django / Python
 - HTML / CSS / JavaScript
-- Base de données Django (SQLite ou autre)
+- Django database system (SQLite or another database)
 
 ---
 
-## Utilisation des outils
+## Use of Tools
 
-- L’utilisation d’outils d’IA est autorisée
-- Toutefois, il est **déconseillé d’utiliser l’IA pour l’exercice 1**, afin d’évaluer votre logique
-
----
-
-## Rendu
-
-Le travail doit être rendu sous la forme d’un **repository Git public**.
-
-### Le repository doit contenir :
-
-#### Exercice 1
-
-- Un fichier Python unique contenant le programme demandé
-
-#### Exercice 2
-
-- Un projet Django complet, incluant :
-  - la gestion des produits
-  - le système de facturation
-  - la pagination
+- The use of AI tools is allowed
+- However, it is **not recommended to use AI for Exercise 1**, in order to evaluate your logic
 
 ---
 
-## Soumission
+## Submission Format
 
-Le lien du repository doit être envoyé par mail à :
+The work must be submitted as a **public Git repository**.
 
-📧 jacques.zhuang@trustia.ai
+### The repository must contain:
+
+#### Exercise 1
+
+- A single Python file containing the requested program
+
+#### Exercise 2
+
+- A complete Django project, including:
+  - product management
+  - invoicing system
+  - pagination
+
+---
+
+## Submission
+
+Send the repository link by email to:
+
+**jacques.zhuang@trustia.ai**
